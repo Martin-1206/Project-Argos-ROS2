@@ -1,0 +1,26 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/marek/go1_ws/install/ros2_unitree_legged_msgs/include/**",
+        "/home/marek/go1_ws/install/media_pipe_ros2_msgs/include/**",
+        "/home/marek/dev_ws/install/turtlesim/include/**",
+        "/home/marek/dev_ws/install/media_pipe_ros2_msgs/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/marek/go1_ws/src/gscam/include/**",
+        "/home/marek/go1_ws/src/unitree_ros2_to_real/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

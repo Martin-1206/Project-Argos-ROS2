@@ -1,0 +1,29 @@
+{
+    "ros.distro": "humble",
+    "python.autoComplete.extraPaths": [
+        "/home/marek/go1_ws/install/ros2_unitree_legged_msgs/local/lib/python3.10/dist-packages",
+        "/home/marek/go1_ws/install/media_pipe_ros2_msgs/local/lib/python3.10/dist-packages",
+        "/home/marek/go1_ws/install/media_pipe_ros2/lib/python3.10/site-packages",
+        "/home/marek/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages",
+        "/home/marek/dev_ws/install/py_pubsub/lib/python3.10/site-packages",
+        "/home/marek/dev_ws/install/media_pipe_ros2_msgs/local/lib/python3.10/dist-packages",
+        "/home/marek/dev_ws/install/media_pipe_ros2/lib/python3.10/site-packages",
+        "/home/marek/dev_ws/install/kogrob/lib/python3.10/site-packages",
+        "/home/marek/dev_ws/install/cv_basics/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/marek/go1_ws/install/ros2_unitree_legged_msgs/local/lib/python3.10/dist-packages",
+        "/home/marek/go1_ws/install/media_pipe_ros2_msgs/local/lib/python3.10/dist-packages",
+        "/home/marek/go1_ws/install/media_pipe_ros2/lib/python3.10/site-packages",
+        "/home/marek/dev_ws/install/turtlesim/local/lib/python3.10/dist-packages",
+        "/home/marek/dev_ws/install/py_pubsub/lib/python3.10/site-packages",
+        "/home/marek/dev_ws/install/media_pipe_ros2_msgs/local/lib/python3.10/dist-packages",
+        "/home/marek/dev_ws/install/media_pipe_ros2/lib/python3.10/site-packages",
+        "/home/marek/dev_ws/install/kogrob/lib/python3.10/site-packages",
+        "/home/marek/dev_ws/install/cv_basics/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

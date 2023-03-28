@@ -1,0 +1,59 @@
+To control the Go1 via gestures, follow these instruction.
+
+
+1. 	Get a connection to the Go1 with LAN or W-LAN !ATTENTION - there is no possibility to get the camera image via W-LAN until now!
+
+1.1 	For a LAN-connection go to your network settings and change your IP-address in IPv4 to 192.168.123.100 
+	and set the netmask to 255.255.255.0
+
+1.2 	For a W-LAN-connection you just have to connect to the RaspberryPi with
+	
+		ssh pi@192.168.12.1 
+		password: 123
+	
+	Now you can connect to any Nano inside Go1.
+
+2. 	Get a connection to the correct Nano.
+
+	To use the front cameras you need to connect with the Headnano. 
+
+		ssh unitree@192.168.123.13
+		passwrod: 123
+	
+	Change directory to the CameraSDK
+
+		cd /home/unitree/camSDK_send_head/UnitreecameraSDK
+
+	and stop these four processes with 
+
+		ps -aux | grep point_cloud_node | awk '{print $2}' | xargs kill -9
+		ps -aux | grep mqttControlNode | awk '{print $2}' | xargs kill -9
+		ps -aux | grep live_human_pose | awk '{print $2}' | xargs kill -9
+		ps -aux | grep rosnode | awk '{print $2}' | xargs kill -9
+	
+	Start transmission of the camera image
+
+		./bins/example_putImagetrans
+	
+	
+3. 	Process the camera image with ROS2
+
+	Open a new terminal and cd to your workspace (don't forget to source the shell). Launch the front.launch.xml with
+
+		ros2 launuch gscam front.launch.xml
+
+	This changes the camera image to a ROS2 topic with messagetype Image.
+
+	Now open a new terminal, cd to your workspace (source the shell) and start the pose2cmd_go1_launch.py
+	
+		ros2 launch media_pipe_ros2 pose2cmd_go1_launch.py
+	
+	Go1 is now ready to be controlled via gestures. You can check and add working gestures in the feature_extractor.py.
+	If you add new commands, make sure to add those also to the cmd_sub.py. Also you might need to write new submoduls for your commands.
+	
+	
+For more Information check the camera_sdk.pdf or the Go1_User_Manual.pdf
+
+
+
+

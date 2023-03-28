@@ -4,7 +4,7 @@
 
 
 This repository is the product of a students project at BHT Berlin in humanoid robotics (HROB), module cognitive robotics (KogRob).
-With these packages you can control the Unitree Go1 robot via gestures by using the a camera of Go1 or your webcam. 
+With these packages you can control the Unitree Go1 robot via gestures by using a camera of Go1 or your webcam. 
 We recommand you to run these packages in Ubuntu 22.04 and ROS2 Humble.
 	
 Authors are Emily Jean Thomas, Marek Pessel, Martin Faißt and Olivia Schmitt.

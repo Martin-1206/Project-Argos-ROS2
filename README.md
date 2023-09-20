@@ -9,6 +9,9 @@ We recommand you to run these packages in Ubuntu 22.04 and ROS2 Humble.
 	
 Authors are Emily Jean Thomas, Marek Pessel, Martin Faißt and Olivia Schmitt.
 
+![pose_cut](https://github.com/Martin-1206/Project-Argos/assets/129275767/32782657-7190-4bc6-af37-36e7578d6376)
+
+
 ## Dependencies
 All necessary packages are in this repo. For running them you have to make sure the following software is installed:
 	
